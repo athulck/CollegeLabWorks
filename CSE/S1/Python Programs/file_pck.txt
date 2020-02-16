@@ -1,0 +1,5 @@
+{'Rice': 5, 'Wheat': 5, 'Sugar': 1}
+Ithreyum pooyi vaangitt vaa manushyaa!
+9895070968
+['KR', 2, 4.5]
+(1, 2, 3, 5, 6, 7, 0)

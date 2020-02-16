@@ -1,0 +1,92 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Module 1</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+	<div class="container">
+
+		<div>
+			<h2>Q) 3 Levels of Style Sheets</h2>
+			<ol>
+				<li><h4>Inline</h4>
+					<p>
+						Highest in precedence.
+					<br>
+					Eg:
+					<code>
+						&ltdiv style="background-color: blue"&gt Content &lt/div&gt
+					</code>
+					</p>
+				</li>
+
+				<li><h4>Document Level</h4>
+					<p>
+						Higher precedence than external, lower than inline.
+					<br>
+					Eg:
+					<code> 
+						<pre>
+		&ltstyle type="text/css"&gt
+			.red-class {
+				color: red;
+			}
+		&lt/style&gt
+		&ltdiv class="red-class"&gt In Red&lt/div&gt
+						</pre>
+					</code>
+					</p>
+				</li>
+
+				<li><h4>External Style Sheets</h4>
+					<p>
+						Lowest in precedence.
+					</p>
+					<code>
+						<pre>
+		&ltlink rel="stylesheet" type="text/css" href="styles.css"&gt
+						</pre>
+					</code>
+				</li>
+
+			</ol>
+		</div>
+
+		<div>
+			<h1>H1 Heading</h1>
+			<p class="grey">This shit better be in grey.</p>
+			<button class="warning">Button</button>
+			<span id="dash">This is dahsed</span>
+		</div>
+
+		<div>
+			<h2> Font Properties </h2>
+			<p>
+				<span style="font-family: 'Arial'; font-size: 14ex">Arial Text font family</span>
+				<span style="font-family: 'Sans'">Helvetica Text font family</span>
+				<span style="font-family: 'Futura'">Futura Text font family</span>
+			</p>
+			<a href="google.com">Link to Google</a>
+		</div>
+
+		<div>
+			<ol style="list-style-type: lower-greek;">
+				<li>Shit</li>
+				<li>Break</li>
+				<li>Terrible</li>
+			</ol>
+			<ul style="list-style-type: circle;">
+				<li>Shit</li>
+				<li>Break</li>
+				<li>Terrible</li>
+			</ul>
+		</div>
+
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+void main () {
+	int a = 8;
+	float b = 5;
+	x = a + b;
+	y = a * a;
+	int c = 4;
+	z = c;
+}

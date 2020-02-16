@@ -1,0 +1,133 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Module 1</title>
+</head>
+<body>
+
+<div>
+	<p>
+		<h1>Introduction to the Internet</h1>
+
+		
+		<ul>
+			<li>
+				<h3>The world wide web</h3>
+				<blockquote>
+		The World Wide Web allows computer users to execute web-based applications and to
+	locate and view multimedia-based documents on almost any subject over the Internet. The
+	web is a relatively recent creation. In 1989, Tim Berners-Lee of CERN (the European Or-
+	ganization for Nuclear Research) began to develop a technology for sharing information
+	via hyperlinked text documents. Berners-Lee called his invention the HyperText Markup
+	Language (HTML). He also wrote communication protocols to form the backbone of his
+	new information system, which he called the World Wide Web. In particular, he wrote
+	the Hypertext Transfer Protocol (HTTP)—a communications protocol used to send in-
+	formation over the web. The URL (Uniform Resource Locator) specifies the address (i.e.,
+	location) of the web page displayed in the browser window. Each web page on the Internet
+	is associated with a unique URL.
+				</blockquote>
+			</li>
+
+			<li>
+				<h3>The Web and The Internet</h3>
+				<blockquote>
+		It is important to understand that the Internet and the Web are not the same
+	thing. The Internet is a collection of computers and other devices connected by
+	equipment that allows them to communicate with each other. The Web is a col-
+	lection of software and protocols that has been installed on most, if not all, of the
+	computers on the Internet. Some of these computers run Web servers, which pro-
+	vide documents, but most run Web clients, or browsers, which request documents
+	from servers and display them to users. The Internet was quite useful before the
+	Web was developed, and it is still useful without it. However, most users of the
+	Internet now use it through the Web.
+				</blockquote>
+			</li>
+
+			<li>
+				<h3>Web Servers</h3>
+				<blockquote>
+					The file structure of a Web server has two separate directories. The root of
+				one of these is the document root. The file hierarchy that grows from the document
+				root stores the Web documents to which the server has direct access and normally
+				serves to clients. The root of the other directory is the server root. This directory,
+				along with its descendant directories, stores the server and its support software.
+
+				<pre>
+					Document Root : /var/www/html/
+				</pre>
+				</blockquote>
+
+			</li>
+
+			<li>
+				<h3>MIME-Multipurpose Internet Mail Extension</h3>
+				<blockquote>
+					When the browser receives the document from a Web server, it uses the included MIME
+					format specification to determine what to do with the document.
+					MIME specifications have the following form:
+					<pre>type/subtype</pre>
+					The most common MIME types are text , image , and video . The most
+					common text subtypes are plain and html . Some common image subtypes are
+					gif and jpeg . Some common video subtypes are mpeg and quicktime . A list
+					of MIME specifications is stored in the configuration files of every Web server.
+					In the remainder of this book, when we say document type, we mean both the type
+					and subtype of the document.
+
+					The name of an experimental sub-type begins with x-
+				</blockquote>
+			</li>
+
+			<li>
+				<h3>The Hypertext Transfer Protocol</h3>
+				<blockquote>
+					
+					<p>The Request Phase
+					<ol>
+						<li>HTTP method Domain part of the URL HTTP version</li>
+						<li>Header Fileds</li>
+						<li>Blank Line</li>
+						<li>Message Body</li>
+					</ol>
+					</p>
+					<pre>GET /storefront.html HTTP/1.1</pre>
+
+					<table border="1">
+						<tr>
+							<th>Method</th>
+							<th>Description</th>
+						</tr>
+						<tr>
+							<td>GET</td>
+							<td>Returns the contents of a specified document</td>
+						</tr>
+						<tr>
+							<td>HEAD</td>
+							<td>Returns the header information of a specified document</td>
+						</tr>
+						<tr>
+							<td>POST</td>
+							<td>Executes a specified document, using the enclosed data</td>
+						</tr>
+						<tr>
+							<td>PUT</td>
+							<td>Replaces a specified document, using the enclosed data</td>
+						</tr>
+						<tr>
+							<td>DELETE</td>
+							<td>Deletes a specified document</td>
+						</tr>
+					</table>
+
+				</blockquote>
+			</li>
+
+
+		</ul>
+	</p>
+</div>
+
+	
+</body>
+</html>

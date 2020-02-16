@@ -1,0 +1,51 @@
+
+#define N 10
+
+#define HELD     0
+#define WANTED   1
+#define RELEASED 2
+
+
+struct LamportClock {
+
+	int hours;
+	int minutes;
+	int seconds;
+	TimeStamp T;
+} Clock;
+
+
+// initialization
+state = RELEASED;
+
+// on entering CS
+state = WANTED;
+
+multicast_request();
+T = Clock.T;
+
+while (received_count < N-1) {
+	continue;
+}
+
+state = HELD
+enterCS();
+
+// on receiving a request
+void receive_request (TimeStamp Ti, ProcessId Pi) {
+
+	if ( (state == HELD) || ((state == WANTED) && (T < Ti) ) ) {
+		enqueue(<Pi, Ti>);
+	} else {
+		send_reply(<Pi, Ti>);
+	} 
+}
+
+
+// exit CS
+state = RELEASED;
+<Pi, Ti> = dequeue();
+send_reply (<Pi, Ti>);
+
+
+

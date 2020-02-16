@@ -1,0 +1,58 @@
+
+
+#define N 10
+
+#define HELD     0
+#define WANTED   1
+#define RELEASED 2
+
+#define TRUE  1
+#define FALSE 0
+
+Vi = {P1, P2, .... Pk};
+
+// initialization
+state = RELEASED;
+voted = FALSE;
+
+// on entering CS
+state = WANTED;
+
+multicast_request(Vi);
+
+while (received_count < K) {
+	continue;
+}
+
+state = HELD
+enterCS();
+
+
+// on receiving a request
+void receive_request (ProcessId Pi) {
+
+	if ( (state == HELD) || (voted == TRUE) ) {
+		enqueue(Pi);
+	} else {
+		send_reply(Pi);
+		voted = TRUE;
+	} 
+}
+
+
+// on receiving a release
+void receive_release (ProcessId Pi) {
+
+	if ( queue.isNotEmpty() ) {
+		Pi = dequeue();
+		send_reply(Pi);
+		voted = TRUE;
+	} else {
+		voted = FALSE;
+	} 
+}
+
+
+// exit CS
+state = RELEASED;
+multicast_release (Vi);
